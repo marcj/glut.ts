@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "baseUrl": "./",
+    "stripInternal": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "module": "commonjs",
+    "target": "es6",
+    "skipLibCheck": true,
+    "types": [
+      "reflect-metadata"
+    ],
+    "lib": [
+      "es2017",
+      "es2016",
+      "dom"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
