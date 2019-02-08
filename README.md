@@ -30,7 +30,14 @@ class UserController implements UserControllerInterface{
     
     @Action()
     users(): Observable<User> {
-        return ['name1', 'name2'];
+        return new Observable((observer) => {
+            observer.next(new User('Peter 1'));
+            
+            setTimeout(() =>{
+                observer.next(new User('Peter 2'));
+                observer.complete();
+            }, 1000);
+        });
     }
     
     @Action()
