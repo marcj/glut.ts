@@ -15,27 +15,6 @@ to send, convert and validate data that is transmitted between server and client
 
 ## Example
 
-#### Client
- 
-```typescript
-const socket = new SocketClient();
-const user = socket.controller<UserControllerInterface>('user');
-
-const names = await user.names();
-console.log(names); // ['name1', 'name2']
-
-(await user.users()).subscribe(nextUser => {
-    console.log('got user', nextUser);  
-});
-
-const userCollection = await user.userList();
-userCollection.subscribe(list => {
-    console.log('list updated', list);  
-});
-//or
-await userCollection.ready.toPromise();
-console.log('list ready', userCollection.count(), userCollection.all());
-```
 
 #### Server
 
@@ -74,6 +53,32 @@ class UserController implements UserControllerInterface{
 
 ```
 
+#### Client
+ 
+```typescript
+const socket = new SocketClient();
+const user = socket.controller<UserControllerInterface>('user');
+
+// Simple array transmission
+const names = await user.names();
+console.log(names); // ['name1', 'name2']
+
+
+//Observable for streamed data
+(await user.users()).subscribe(nextUser => {
+    console.log('got user', nextUser);  
+});
+
+
+//Collection for streamed lists of entities
+const userCollection = await user.userList();
+userCollection.subscribe(list => {
+    console.log('list updated', list);  
+});
+//or
+await userCollection.ready.toPromise();
+console.log('list ready', userCollection.count(), userCollection.all());
+```
 
 #### Common package / Shared between server and client
 
