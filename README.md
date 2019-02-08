@@ -93,10 +93,10 @@ console.log('list ready', userCollection.count(), userCollection.all());
 @Entity('user')
 class User implements IdInterface {
     @StringType()
-    id!: string;
+    id: string = uuid();
 
     @NumberType()
-    version!: number;
+    version: number = 1;
 
     @StringType()
     name: string;
