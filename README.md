@@ -3,8 +3,15 @@
 Kamille is a reactive data streaming distribution real-time app framework for modern client/server architectures 
 based on [rxJS](https://github.com/ReactiveX/rxjs).
 
-It's suited for streaming data and entities between your client <-> server and automatically converts the data
-for the transport via WebSockets, so you have only one entity defined for both, server and client.
+It's suited for streaming data and entities between your client <-> server. Kamille automatically converts and validates the data
+for the transport via WebSockets, so you have only one entity schema and one controller interface defined for both, server and client. 
+
+The controller based architecture allows you to strictly type against an interface and allow the client to
+directly detect changes in the interface by typescripts type checking. 
+
+This increases the development time for client server communications dramatically
+since you don't need to define entities multiple times in different languages and don't need to invent a new protocol
+to send, convert and validate data that is transmitted between server and client. 
 
 ## Example
 
