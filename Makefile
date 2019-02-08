@@ -1,9 +1,8 @@
 install:
-	lerna bootstrap --no-ci
+	lerna bootstrap --hoist --no-ci
 
 test:
 	jest --coverage
 
-
-start:
+server-start:
 	cd packages/server && npm run start

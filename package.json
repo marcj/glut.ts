@@ -1,28 +1,40 @@
 {
-    "name": "root",
-    "license": "MIT",
-    "engines": {
-        "node": ">= 8.9.0"
+  "name": "root",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "devDependencies":  {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.12.5",
+    "coveralls": "^3.0.2",
+    "jest": "^23.6.0",
+    "jest-extended": "^0.11.0",
+    "lerna": "^3.4.3",
+    "reflect-metadata": "^0.1.12",
+    "ts-jest": "^23.10.4",
+    "ts-node": "^6.0.0",
+    "typescript": "^3.3.1"
+  },
+  "jest": {
+    "testURL": "http://localhost/",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "collectCoverageFrom": [
+      "**/*.{ts}",
+      "!**/node_modules/**",
+      "!**/lib/**/*",
+      "!**/*.d.ts"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
     },
-    "jest": {
-        "testURL": "http://localhost/",
-        "moduleFileExtensions": [
-            "ts",
-            "tsx",
-            "js"
-        ],
-        "collectCoverageFrom": [
-            "**/*.{ts}",
-            "!**/node_modules/**",
-            "!**/lib/**/*",
-            "!**/*.d.ts"
-        ],
-        "transform": {
-            "^.+\\.(ts|tsx)$": "ts-jest"
-        },
-        "testMatch": [
-            "**/*.spec.ts"
-        ],
-        "setupTestFrameworkScriptFile": "jest-extended"
-    }
+    "testMatch": [
+      "**/*.spec.ts"
+    ],
+    "setupTestFrameworkScriptFile": "jest-extended"
+  }
 }
