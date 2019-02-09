@@ -83,7 +83,7 @@ userCollection.subscribe(list => {
     console.log('list updated', list);  
 });
 //or
-await userCollection.ready.toPromise();
+await userCollection.readyState;
 console.log('list ready', userCollection.count(), userCollection.all());
 ```
 
