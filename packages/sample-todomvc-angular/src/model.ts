@@ -1,9 +1,10 @@
-import {BooleanType, Entity, StringType, NumberType, uuid} from '@marcj/marshal';
+import {BooleanType, Entity, StringType, NumberType, uuid, ID} from '@marcj/marshal';
 import {IdInterface} from '@kamille/core';
 
 @Entity('todo')
 export class Todo implements IdInterface {
 
+    @ID()
     @StringType()
     id: string = uuid();
 
