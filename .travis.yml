@@ -11,7 +11,6 @@ services:
 sudo: false
 
 before_script:
-- npm install
 - npm install -g coveralls lerna jest@23.6.0 npm-local-development
 - lerna bootstrap --hoist --no-ci
 - sleep 2 # thanks mongo
