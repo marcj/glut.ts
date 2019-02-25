@@ -22,7 +22,7 @@
     },
     "include": [
         "src/",
-        "node_modules/@kamille/*/index.ts",
-        "node_modules/@kamille/*/src/**/*.ts"
+        "node_modules/@marcj/glut*/index.ts",
+        "node_modules/@marcj/glut*/src/**/*.ts"
     ]
 }

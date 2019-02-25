@@ -10,17 +10,12 @@ services:
 
 sudo: false
 
-cache:
-  directories:
-  - 'node_modules'
-
 before_script:
 - npm install
 - npm install -g coveralls lerna jest@23.6.0 npm-local-development
 - lerna bootstrap --hoist --no-ci
 - sleep 2 # thanks mongo
-- npm-local-development lerna --no-watcher #fix devDependencies
 
 script:
 - jest --coverage
-- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+- cat ./coverage/lcov.info | coveralls

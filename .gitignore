@@ -1,2 +1,5 @@
 package-lock.json
 dist
+node_modules
+/coverage
+/.idea
