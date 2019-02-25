@@ -1,7 +1,7 @@
 import 'reflect-metadata';
-import {Collection, JSONEntity} from '@kamille/core';
+import {Collection, JSONEntity} from '@marcj/glut-core';
 import {Todo} from './model';
-import {Action, Application, ApplicationModule, ApplicationServer, Controller, EntityStorage, ExchangeDatabase, Session} from '@kamille/server';
+import {Action, Application, ApplicationModule, ApplicationServer, Controller, EntityStorage, ExchangeDatabase, Session} from '@marcj/glut-server';
 import {plainToClass, partialPlainToClass} from '@marcj/marshal';
 import {ApiController} from './contract';
 

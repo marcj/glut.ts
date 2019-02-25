@@ -1,4 +1,4 @@
-import {Collection, JSONEntity} from '@kamille/core';
+import {Collection, JSONEntity} from '@marcj/glut-core';
 import {Todo} from './model';
 
 export interface ApiController {

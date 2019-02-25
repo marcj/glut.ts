@@ -4,6 +4,12 @@
   "engines": {
     "node": ">= 8.9.0"
   },
+  "scripts": {
+    "test": "rm -rf packages/*/dist && jest --coverage",
+    "bootstrap": "lerna bootstrap --no-hoist --no-ci",
+    "tsc": "lerna run tsc",
+    "publish": "lerna run tsc && lerna publish"
+  },
   "devDependencies":  {
     "@types/jest": "^22.2.3",
     "@types/node": "^10.12.5",
@@ -13,7 +19,8 @@
     "lerna": "^3.4.3",
     "reflect-metadata": "^0.1.12",
     "ts-jest": "^23.10.4",
-    "ts-node": "^6.0.0",
+    "ts-lint": "^4.5.1",
+    "ts-node": "^7.0.1",
     "typescript": "~3.1.6"
   },
   "jest": {
@@ -28,6 +35,9 @@
       "!**/node_modules/**",
       "!**/lib/**/*",
       "!**/*.d.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "packages/sample-todomvc-angular"
     ],
     "transform": {
       "^.+\\.(ts|tsx)$": "ts-jest"

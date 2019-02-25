@@ -1,12 +1,12 @@
 import {Todo} from '../../model';
-import {SocketClient} from '@kamille/client';
+import {SocketClient} from '@marcj/glut-client';
 import {ApiController} from '../../contract';
 import {classToPlain} from '@marcj/marshal';
-import {Collection} from '@kamille/core';
+import {Collection} from '@marcj/glut-core';
 
 
 export class TodoStore {
-    public todos: Collection<Todo>;
+    public todos?: Collection<Todo>;
     protected socket = new SocketClient();
     public todoApi: ApiController;
 
@@ -22,11 +22,11 @@ export class TodoStore {
     }
 
     private getWithCompleted(completed: Boolean): Todo[] {
-        return this.todos.all().filter((todo: Todo) => todo.completed === completed);
+        return this.todos!.all().filter((todo: Todo) => todo.completed === completed);
     }
 
     allCompleted() {
-        return this.todos.all().length === this.getCompleted().length;
+        return this.todos!.all().length === this.getCompleted().length;
     }
 
     setAllTo(completed: Boolean) {

@@ -1,5 +1,5 @@
 import {BooleanType, Entity, StringType, NumberType, uuid, ID} from '@marcj/marshal';
-import {IdInterface} from '@kamille/core';
+import {IdInterface} from '@marcj/glut-core';
 
 @Entity('todo')
 export class Todo implements IdInterface {
