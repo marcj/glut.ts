@@ -6,7 +6,7 @@
   },
   "scripts": {
     "test": "rm -rf packages/*/dist && jest --coverage",
-    "bootstrap": "lerna bootstrap --no-hoist --no-ci",
+    "bootstrap": "lerna bootstrap --hoist --no-ci",
     "tsc": "lerna run tsc",
     "publish": "lerna run tsc && lerna publish"
   },
