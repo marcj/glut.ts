@@ -1,0 +1,6 @@
+{
+  "@marcj/estdlib": "../estdlib.ts/packages/estdlib",
+  "@marcj/estdlib-rxjs": "../estdlib.ts/packages/estdlib-rxjs",
+  "@marcj/marshal": "../marshal/packages/core",
+  "@marcj/marshal-mongo": "../marshal/packages/mongo"
+}
