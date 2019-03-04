@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "baseUrl": "./",
     "stripInternal": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,

@@ -8,6 +8,7 @@
     "test": "rm -rf packages/*/dist && jest --coverage",
     "bootstrap": "lerna bootstrap --hoist --no-ci",
     "tsc": "lerna run tsc",
+    "tsc-watch": "lerna run --parallel tsc-watch",
     "publish": "lerna run tsc && lerna publish"
   },
   "devDependencies":  {
