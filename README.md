@@ -68,7 +68,7 @@ class UserController implements UserControllerInterface{
     
     @Action()
     userList(): Collection<User> {
-        const collection = new Collection<User>;
+        const collection = new Collection(User);
         collection.add(new User('Peter 1'));
         collection.add(new User('Peter 2'));
         collection.add(new User('Peter 3'));
