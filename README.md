@@ -1,9 +1,13 @@
 # Glut.ts
 
 [![Build Status](https://travis-ci.com/marcj/glut.ts.svg?branch=master)](https://travis-ci.com/marcj/glut.ts)
-[![npm version](https://badge.fury.io/js/%40marcj%2Fglut-core.svg)](https://badge.fury.io/js/%40marcj%2Fglut-core)
-[![npm version](https://badge.fury.io/js/%40marcj%2Fglut-server.svg)](https://badge.fury.io/js/%40marcj%2Fglut-server)
-[![npm version](https://badge.fury.io/js/%40marcj%2Fglut-client.svg)](https://badge.fury.io/js/%40marcj%2Fglut-client)
+[![Coverage Status](https://coveralls.io/repos/github/marcj/glut.ts/badge.svg?branch=master)](https://coveralls.io/github/marcj/glut.ts?branch=master)
+
+`@marcj/glut-core` [![npm version](https://badge.fury.io/js/%40marcj%2Fglut-core.svg)](https://badge.fury.io/js/%40marcj%2Fglut-core)
+
+`@marcj/glut-server` [![npm version](https://badge.fury.io/js/%40marcj%2Fglut-server.svg)](https://badge.fury.io/js/%40marcj%2Fglut-server)
+
+`@marcj/glut-client`  [![npm version](https://badge.fury.io/js/%40marcj%2Fglut-client.svg)](https://badge.fury.io/js/%40marcj%2Fglut-client)
 
 
 Glust.ts is a reactive data streaming distribution real-time app framework for modern client/server architectures 
@@ -64,7 +68,7 @@ class UserController implements UserControllerInterface{
     
     @Action()
     userList(): Collection<User> {
-        const collection = new Collection(User);
+        const collection = new Collection<User>;
         collection.add(new User('Peter 1'));
         collection.add(new User('Peter 2'));
         collection.add(new User('Peter 3'));
