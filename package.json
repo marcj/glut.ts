@@ -8,8 +8,11 @@
     "test": "rm -rf packages/*/dist && jest --coverage",
     "bootstrap": "lerna bootstrap --hoist --no-ci",
     "tsc": "lerna run tsc",
+    "docs": "rm -rf docs && typedoc",
     "tsc-watch": "lerna run --parallel tsc-watch",
-    "publish": "lerna run tsc && lerna publish"
+    "publish": "lerna run tsc && lerna publish",
+    "docker-image": "docker build -t glut/website .",
+    "publish-website": "heroku container:push web && heroku container:release web"
   },
   "devDependencies":  {
     "@types/jest": "^23.3.14",
@@ -21,7 +24,9 @@
     "ts-jest": "22.0.4",
     "ts-lint": "^4.5.1",
     "ts-node": "^8.0.2",
-    "typescript": "^3.3.3333"
+    "typescript": "next",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-lerna-packages": "^0.1.4"
   },
   "jest": {
     "testURL": "http://localhost/",
