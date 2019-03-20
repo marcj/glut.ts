@@ -9,6 +9,7 @@ module.exports = {
         'website/**/*',
     ],
     name: 'glut.ts',
+    readme: 'README.md',
     lernaExclude: ['@marcj/glut-integration', '@marcj/glut-sample-angular'],
     excludePrivate: true,
     skipInternal: true
