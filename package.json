@@ -24,7 +24,7 @@
     "ts-jest": "22.0.4",
     "ts-lint": "^4.5.1",
     "ts-node": "^8.0.2",
-    "typescript": "next",
+    "typescript": "^3.3.4000",
     "typedoc": "^0.14.2",
     "typedoc-plugin-lerna-packages": "^0.1.5"
   },

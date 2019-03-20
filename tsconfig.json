@@ -1,27 +1,21 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "stripInternal": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "strictNullChecks": true,
-    "noImplicitAny": false,
-    "strict": true,
     "sourceMap": true,
-    "inlineSources": true,
+    "strict": true,
     "module": "commonjs",
-    "target": "es2017",
-    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2018",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "mapRoot": "src/",
     "types": [
-      "reflect-metadata"
+      "reflect-metadata",
     ],
     "lib": [
       "es2017",
-      "es2016",
       "dom"
     ]
-  },
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }
