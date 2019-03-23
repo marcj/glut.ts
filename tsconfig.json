@@ -1,7 +1,9 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "sourceMap": true,
     "strict": true,
+    "declaration": true,
     "module": "commonjs",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -11,11 +13,14 @@
     ],
     "mapRoot": "src/",
     "types": [
-      "reflect-metadata",
+      "reflect-metadata"
     ],
     "lib": [
       "es2017",
       "dom"
     ]
-  }
+  },
+  "exclude": [
+    "dist"
+  ]
 }
