@@ -16,5 +16,5 @@ before_script:
 - sleep 2 # thanks mongo
 
 script:
-- jest --coverage --detectOpenHandles
+- jest --coverage --forceExit --detectOpenHandles
 - cat ./coverage/lcov.info | coveralls
