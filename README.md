@@ -23,7 +23,15 @@ This increases the development time for client server communications dramaticall
 since you don't need to define entities multiple times in different languages and don't need to invent a new protocol
 to send, convert, and validate data that is transmitted between server and client. 
 
-Automatic serialisation from and to JSON is done using [@marcj/marshal](https://github.com/marcj/marshal).
+## Features
+
+* Automatic serialization thanks to [Marshal.ts](https://github.com/marcj/marshal).
+* Automatic validation of method arguments.
+* Support for RxJS Observable as results (stream methods)
+* Entity-Sync, a technique to sync entities stored in MongoDB with multiple clients at the same time.
+* File abstraction with streaming support.
+* Pub/sub exchange using Redis
+* Peer to Peer connections (client to client, in work)
 
 ## Install
 
