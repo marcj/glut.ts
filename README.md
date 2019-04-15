@@ -27,11 +27,11 @@ to send, convert, and validate data that is transmitted between server and clien
 
 * Automatic serialization thanks to [Marshal.ts](https://github.com/marcj/marshal).
 * Automatic validation of method arguments.
-* Support for RxJS Observable as results (stream methods)
-* Entity-Sync, a technique to sync entities stored in MongoDB with multiple clients at the same time.
+* Support for RxJS Observables as results (stream methods)
+* Entity-Sync, a technique to sync entity changes stored in MongoDB with multiple clients at the same time.
 * File abstraction with streaming support.
 * Pub/sub exchange using Redis
-* Peer to Peer connections (client to client, in work)
+* Peer to Peer communications
 
 ## Install
 
