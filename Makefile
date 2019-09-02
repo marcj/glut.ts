@@ -6,3 +6,7 @@ test:
 
 server-start:
 	cd packages/server && npm run start
+
+setup-test-env:
+	redis-server&
+	mongod --dbpath /tmp/mongo-test &
