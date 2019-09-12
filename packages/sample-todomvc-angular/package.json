@@ -27,7 +27,7 @@
     "@marcj/marshal": "^0.8.10",
     "@marcj/marshal-mongo": "^0.8.10",
     "core-js": "^2.5.4",
-    "rxjs": "~6.3.3",
+    "rxjs": "~6.5.3",
     "todomvc-app-css": "^2.1.2",
     "todomvc-common": "^1.0.5",
     "tslib": "^1.9.0",

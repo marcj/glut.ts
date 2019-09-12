@@ -14,7 +14,7 @@
     "docker-image": "docker build -t glut/website .",
     "publish-website": "heroku container:push web && heroku container:release web"
   },
-  "devDependencies":  {
+  "devDependencies": {
     "@types/jest": "^23.3.14",
     "@types/node": "^11.9.5",
     "jest": "^23.6.0",
