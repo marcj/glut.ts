@@ -5,7 +5,7 @@
     "node": ">= 8.9.0"
   },
   "scripts": {
-    "test": "rm -rf packages/*/dist && jest --coverage",
+    "test": "rm -rf packages/*/dist && jest --coverage --forceExit --detectOpenHandles --runInBand",
     "bootstrap": "lerna bootstrap --hoist --no-ci",
     "tsc": "lerna run tsc",
     "docs": "rm -rf docs && typedoc",
