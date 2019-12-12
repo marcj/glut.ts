@@ -10,7 +10,7 @@ sudo: false
 
 before_script:
 - npm install -g coveralls lerna jest@23.6.0 npm-local-development
-- lerna bootstrap --hoist --no-ci
+- lerna bootstrap --hoist
 - sleep 2 # thanks mongo
 
 script:
