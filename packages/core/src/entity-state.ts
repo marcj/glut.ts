@@ -1,7 +1,7 @@
 import {plainToClass, propertyPlainToClass, RegisteredEntities} from "@marcj/marshal";
-import {Collection, CollectionStream, EntitySubject, IdInterface, JSONEntity, ServerMessageEntity} from "@marcj/glut-core";
+import {Collection, CollectionStream, EntitySubject, IdInterface, JSONEntity, ServerMessageEntity} from "../index";
 import {set} from 'dot-prop';
-import {ClassType, eachPair, each, getClassName} from "@marcj/estdlib";
+import {ClassType, eachPair, getClassName} from "@marcj/estdlib";
 import {skip} from "rxjs/operators";
 import {ObjectUnsubscribedError} from "rxjs";
 
