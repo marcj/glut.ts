@@ -1,7 +1,7 @@
 {
   "!@marcj/estdlib": "../estdlib.ts/packages/estdlib",
   "!@marcj/estdlib-rxjs": "../estdlib.ts/packages/estdlib-rxjs",
-  "@marcj/marshal": "../marshal.ts/packages/core",
-  "@marcj/marshal-mongo": "../marshal.ts/packages/mongo",
+  "!@marcj/marshal": "../marshal.ts/packages/core",
+  "!@marcj/marshal-mongo": "../marshal.ts/packages/mongo",
   "!typedoc-plugin-lerna-packages": "../typedoc-plugin-lerna-packages"
 }

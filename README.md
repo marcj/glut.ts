@@ -10,7 +10,7 @@
 `@marcj/glut-client`  [![npm version](https://badge.fury.io/js/%40marcj%2Fglut-client.svg)](https://badge.fury.io/js/%40marcj%2Fglut-client)
 
 
-Glust.ts is a reactive data streaming distribution real-time app framework for modern client/server architectures 
+Glust.ts is a reactive real-time app framework for modern client/server architectures 
 based on [rxJS](https://github.com/ReactiveX/rxjs).
 
 It's suited for streaming data and entities between your client <-> server. Glut.ts automatically converts and validates the data
