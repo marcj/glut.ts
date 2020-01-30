@@ -7,7 +7,7 @@
   "scripts": {
     "test": "rm -rf packages/*/dist && jest --coverage --forceExit --detectOpenHandles --runInBand",
     "bootstrap": "lerna bootstrap --hoist --no-ci",
-    "tsc": "lerna run tsc",
+    "tsc": "lerna run --parallel tsc",
     "docs": "rm -rf docs && typedoc",
     "tsc-watch": "lerna run --parallel tsc-watch",
     "publish": "lerna run tsc && lerna publish",
