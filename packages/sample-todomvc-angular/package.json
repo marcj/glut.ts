@@ -1,6 +1,6 @@
 {
   "name": "@marcj/glut-sample-angular",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -21,9 +21,9 @@
     "@angular/platform-browser": "~7.1.0",
     "@angular/platform-browser-dynamic": "~7.1.0",
     "@angular/router": "~7.1.0",
-    "@marcj/glut-client": "^0.0.27",
-    "@marcj/glut-core": "^0.0.27",
-    "@marcj/glut-server": "^0.0.27",
+    "@marcj/glut-client": "^0.0.28",
+    "@marcj/glut-core": "^0.0.28",
+    "@marcj/glut-server": "^0.0.28",
     "@marcj/marshal": "^0.8.10",
     "@marcj/marshal-mongo": "^0.8.10",
     "core-js": "^2.5.4",
